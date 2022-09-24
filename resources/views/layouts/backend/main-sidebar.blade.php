@@ -5,11 +5,13 @@
             <!-- menu item Dashboard-->
             <li>
                 <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dashboard">
-                    <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">Dashboard</span></div>
+{{--                    <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">{{trans('backend/main-sidebar.Dashboard')}}</span></div>--}}
+                    <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">{{__('backend/main-sidebar.Dashboard')}}</span></div>
                     <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
                 </a>
                 <ul id="dashboard" class="collapse" data-bs-parent="#sidebarnav">
-                    <li> <a href="index.html">Home</a> </li>
+{{--                    <li> <a href="index.html">Home</a> </li>--}}
+                    <li> <a href="index.html">{{ LaravelLocalization::getCurrentLocaleName() }}</a> </li>
                     <li> <a href="index-02.html">Dashboard 02</a> </li>
                     <li> <a href="index-03.html">Dashboard 03</a> </li>
                     <li> <a href="index-04.html">Dashboard 04</a> </li>

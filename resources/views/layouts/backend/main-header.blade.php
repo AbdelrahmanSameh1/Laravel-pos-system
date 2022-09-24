@@ -60,7 +60,7 @@
         </div>
 
 
-        
+
 
 
         <li class="nav-item fullscreen">
@@ -119,7 +119,7 @@
                 <a class="dropdown-item" href="#"><i class="text-info ti-settings"></i>Settings</a>
 {{--                <a class="dropdown-item" href="{{route('logout')}}"><i class="text-danger ti-unlock"></i>Logout</a>--}}
                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="document.getElementById('logout-form').getAttribute('action')"><i class="text-danger ti-unlock"></i>Logout</a>
-                <form id="logout-form" action="{{ \LaravelLocalization::localizeURL('/logout') }}" method="post" style="display: none">
+                <form id="logout-form" action="{{ \LaravelLocalization::localizeURL('/logout') }}" method="POST" style="display: none">
                     @csrf
 
                 </form>
