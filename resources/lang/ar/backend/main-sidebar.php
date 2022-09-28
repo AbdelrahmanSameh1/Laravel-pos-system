@@ -4,6 +4,7 @@ return [
 
 
     'Dashboard' => 'الرئيسية',
+    'categories' => 'الاقسام',
 
 
 ];

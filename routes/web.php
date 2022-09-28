@@ -18,6 +18,10 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 //    return view('backend.blank');
 //});
 
+Route::get('/', function () {
+    return view('auth.register');
+});
+
 
 
 
@@ -38,6 +42,9 @@ Route::group(
     })->middleware(['auth'])->name('dashboard');
 
 
+
+    // categories
+    Route::resource('categories', \App\Http\Controllers\CategorieController::class);
 
 
 

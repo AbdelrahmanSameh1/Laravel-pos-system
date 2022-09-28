@@ -11,7 +11,7 @@
                 </a>
                 <ul id="dashboard" class="collapse" data-bs-parent="#sidebarnav">
 {{--                    <li> <a href="index.html">Home</a> </li>--}}
-                    <li> <a href="index.html">{{ LaravelLocalization::getCurrentLocaleName() }}</a> </li>
+                    <li> <a href="{{route('categories.index')}}">{{trans('backend/main-sidebar.categories')}}</a> </li>
                     <li> <a href="index-02.html">Dashboard 02</a> </li>
                     <li> <a href="index-03.html">Dashboard 03</a> </li>
                     <li> <a href="index-04.html">Dashboard 04</a> </li>
