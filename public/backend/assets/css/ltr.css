@@ -23065,6 +23065,9 @@ ol.ui.list ol li,
   right: 20px;
   top: 20px; }
 
+.scrollbar {
+    overflow-x: hidden; }
+
 .nav-tabs-custom {
   position: absolute;
   right: 0;

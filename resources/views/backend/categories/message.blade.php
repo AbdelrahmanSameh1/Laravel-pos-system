@@ -12,7 +12,7 @@
 @if(session()->has('Add'))
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         <strong>{{session()->get('Add')}}</strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
@@ -22,7 +22,7 @@
 @if(session()->has('Edit'))
     <div class="alert alert-info alert-dismissible fade show" role="alert">
         <strong>{{session()->get('Edit')}}</strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
@@ -32,7 +32,7 @@
 @if(session()->has('Deleted'))
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
         <strong>{{session()->get('Deleted')}}</strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>

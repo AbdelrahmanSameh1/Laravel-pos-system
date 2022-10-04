@@ -15,12 +15,12 @@
     <div class="page-title">
         <div class="row">
             <div class="col-sm-6">
-                <h4 class="mb-0"> Dashboard</h4>
+                <h4 style="font-family: 'Cairo', sans-serif;" class="mb-0">{{trans('backend/categories.dashboard')}}</h4>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb pt-0 pe-0 float-start float-sm-end">
-                    <li class="breadcrumb-item"><a href="index.html" class="default-color">Home</a></li>
-                    <li class="breadcrumb-item active ps-0">Dashboard</li>
+                    <li class="breadcrumb-item"><a href="{{route('dashboard')}}" class="default-color">{{trans('backend/categories.home')}}</a></li>
+                    <li class="breadcrumb-item active ps-0">{{trans('backend/categories.dashboard')}}</li>
                 </ol>
             </div>
         </div>

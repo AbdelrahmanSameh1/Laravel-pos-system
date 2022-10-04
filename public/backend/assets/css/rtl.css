@@ -38,6 +38,9 @@ NOTE: This file includes all admin Template plugins and Shortcodes. If you don't
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -4562,7 +4565,7 @@ textarea.form-control-lg {
   float: right;
   padding-left: 0.5rem;
   color: #6c757d;
-  /*content:  var(--bs-breadcrumb-divider, "http://themes.potenzaglobalsolutions.com/") ;*/
+  content:  var(--bs-breadcrumb-divider, " /") ;
 }
 .breadcrumb-item.active {
   color: #6c757d;

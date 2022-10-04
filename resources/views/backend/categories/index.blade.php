@@ -63,27 +63,38 @@
                                 </thead>
                                 <tbody>
                                 @foreach($categories as $categorie)
-                                <tr>
-                                    <td>{{$categorie->id}}</td>
-                                    <td>{{$categorie->name}}</td>
-                                    <td>{{$categorie->note == true ? $categorie->note : trans('backend/categories.no notes') }}</td>
-                                    <td>
-                                        <button class="btn btn-success btn-sm" title="{{trans('backend/categories.edit')}}" data-toggle="modal" data-bs-target="#Editcategorie{{$categorie->id}}">
-                                            <i class="fa fa-edit"></i>
-                                        </button>
-                                        <button class="btn btn-danger btn-sm" title="{{trans('backend/categories.delete')}}" data-toggle="modal" data-bs-target="#Delete{{$categorie->id}}">
-                                            <i class="fa fa-trash"></i>
-                                        </button>
-                                    </td>
+                                    <tr>
+                                        <td>{{$categorie->id}}</td>
+                                        <td>{{$categorie->name}}</td>
+                                        <td>{{$categorie->note == true ? $categorie->note : trans('backend/categories.no notes') }}</td>
+                                        <td>
 
-                                </tr>
+                                            <button class="btn btn-success btn-sm" title="{{trans('backend/categories.edit')}}" data-bs-toggle="modal" data-bs-target="#Editcategorie{{$categorie->id}}">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+
+
+
+                                            <button class="btn btn-danger btn-sm" title="{{trans('backend/categories.delete')}}" data-bs-toggle="modal" data-bs-target="#Delete{{$categorie->id}}">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+
+                                    </tr>
+
+                                    {{--                                    note this include recur many times in foreach--}}
+                                    @include('backend.categories.edit')
+                                    @include('backend.categories.delete')
+
                                 @endforeach
                                 </tbody>
                             </table>
+
                         </div>
                     </div>
                 </div>
             </div>
+
 
         </div>
     @else
@@ -125,15 +136,24 @@
                                         <td>{{$categorie->name}}</td>
                                         <td>{{$categorie->note == true ? $categorie->note : trans('backend/categories.no notes') }}</td>
                                         <td>
-                                            <button class="btn btn-success btn-sm" title="{{trans('backend/categories.edit')}}" data-toggle="modal" data-bs-target="#Editcategorie{{$categorie->id}}">
+
+                                            <button class="btn btn-success btn-sm" title="{{trans('backend/categories.edit')}}" data-bs-toggle="modal" data-bs-target="#Editcategorie{{$categorie->id}}">
                                                 <i class="fa fa-edit"></i>
                                             </button>
-                                            <button class="btn btn-danger btn-sm" title="{{trans('backend/categories.delete')}}" data-toggle="modal" data-bs-target="#Delete{{$categorie->id}}">
+
+
+
+                                            <button class="btn btn-danger btn-sm" title="{{trans('backend/categories.delete')}}" data-bs-toggle="modal" data-bs-target="#Delete{{$categorie->id}}">
                                                 <i class="fa fa-trash"></i>
                                             </button>
                                         </td>
 
                                     </tr>
+
+{{--                                    note this include recur many times in foreach--}}
+                                    @include('backend.categories.edit')
+                                    @include('backend.categories.delete')
+
                                 @endforeach
                                 </tbody>
                             </table>
